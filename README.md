@@ -1,4 +1,4 @@
-# Daily Dev Trivia
+# Python/GitHub Trivia App
 
 A daily GitHub and Python trivia app, built in guided milestones to practice
 branches, pull requests, hosting, and scheduled automation.
@@ -8,7 +8,7 @@ branches, pull requests, hosting, and scheduled automation.
 One shared question each day, four choices, and one attempt per browser per day.
 After submitting, see the correct answer and explanation. Your history, points,
 and accuracy are saved in `localStorage` in this browser only. There are no
-accounts, databases, API credentials, paid services, or production Python server.
+accounts, API credentials, paid services, or production Python server.
 
 The 30-question bank contains 15 GitHub and 15 Python questions. It rotates by
 calendar date at midnight `America/New_York`, including daylight saving changes,
@@ -56,7 +56,7 @@ It also generates `build.json` with a UTC build timestamp for checking automatio
 4. Merge the passing pull request into `main`. The workflow builds `dist/` and
    deploys it with the `github-pages` environment. No custom secrets are needed.
 5. Open the URL in the successful deployment job. For the current repository,
-   the expected URL is https://ahimmelm-ui.github.io/479_InClass/ (not live until deployed).
+   the expected URL after renaming is https://ahimmelm-ui.github.io/Python-GitHub-Trivia-App/.
 
 See GitHub's [custom Pages workflow guide](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 This checkout has not been committed, pushed, or deployed automatically.

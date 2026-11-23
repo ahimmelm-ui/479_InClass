@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-Daily Dev Trivia is a static GitHub Pages app with no accounts or database. `web/` contains HTML, CSS, JavaScript modules, and `questions.json`. `main.py` serves the local preview; `question_bank.py` validates content and `build.py` packages public assets into ignored `dist/`. Python and Node tests live in `tests/`. `pyproject.toml`, `uv.lock`, and `.python-version` define the uv development environment.
+Python/GitHub Trivia App is a static GitHub Pages app with no accounts. `web/` contains HTML, CSS, JavaScript modules, and `questions.json`. `main.py` serves the local preview; `question_bank.py` validates content and `build.py` packages public assets into ignored `dist/`. Python and Node tests live in `tests/`. `pyproject.toml`, `uv.lock`, and `.python-version` define the uv development environment.
 
 ## Build, Test, and Development Commands
 
@@ -17,7 +17,7 @@ Use Python 3.14+, uv, and Node 24+ for development. The published app needs only
 - `uv run ruff format --check .` — check Python formatting.
 - `uv add <package>` — add a runtime dependency.
 
-Commit dependency changes with the lockfile. Keep environments, caches, secrets, and generated files out of commits. Do not introduce databases, sign-in, or paid services.
+Commit dependency changes with the lockfile. Keep environments, caches, secrets, and generated files out of commits. Keep the app static, with browser-only history and free hosting.
 
 ## Coding Style & Naming Conventions
 

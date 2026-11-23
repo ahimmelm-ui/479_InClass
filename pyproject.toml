@@ -1,5 +1,5 @@
 [project]
-name = "479-inclass"
+name = "python-github-trivia-app"
 version = "0.1.0"
 description = "Daily GitHub and Python trivia, built as a guided GitHub learning project"
 readme = "README.md"
