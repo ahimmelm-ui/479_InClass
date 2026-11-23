@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Daily GitHub and Python trivia. No accounts, scores saved only in your browser.">
+  <title>Daily Dev Trivia</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./"><span aria-hidden="true">&gt;_</span> Daily Dev Trivia</a>
+    <a class="badge" href="#history">Your history</a>
+  </header>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">A little knowledge. Every day.</p>
+      <h1 id="page-title">Your daily dev brain break.</h1>
+      <p>One question about GitHub or Python. Build your knowledge, one small win at a time.</p>
+    </section>
+    <p id="status" role="status">Loading today’s question…</p>
+    <noscript>This game needs JavaScript to display questions and save progress.</noscript>
+    <section class="question-card" id="game" aria-labelledby="question-title" hidden>
+      <div class="question-meta"><span class="category" id="category"></span><time id="day"></time></div>
+      <h2 id="question-title"></h2>
+      <form id="answer-form">
+        <fieldset id="choices"><legend>Pick your answer</legend></fieldset>
+        <button type="submit" id="submit">Check my answer</button>
+      </form>
+      <div id="result" role="status" hidden></div>
+      <p class="reset">New question at midnight Eastern · America/New_York</p>
+    </section>
+    <section class="question-card history" id="history" aria-labelledby="history-title">
+      <h2 id="history-title">Your progress</h2>
+      <p id="stats">No answers yet. Start with today’s question.</p>
+      <ol id="history-list"></ol>
+      <p class="preview-note">No account. Scores stay in this browser on this device. Clearing browser data removes your history. Your answers are never sent to a server.</p>
+    </section>
+    <p class="footer-note">Made to learn. Built one commit at a time.</p>
+  </main>
+</body>
+</html>
